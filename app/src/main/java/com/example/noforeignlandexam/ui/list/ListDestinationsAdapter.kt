@@ -16,7 +16,7 @@ import kotlinx.android.synthetic.main.places_row.view.*
 
 class ListDestinationsAdapter(
     private var placeListFull: MutableList<PlacesEntity> = mutableListOf()
-) : RecyclerView.Adapter<ListDestinationsAdapter.ListPlaceViewHolder?>(), Filterable {
+        ) : RecyclerView.Adapter<ListDestinationsAdapter.ListPlaceViewHolder?>(), Filterable {
 
     private var featureListToShow: MutableList<PlacesEntity> = mutableListOf()
 

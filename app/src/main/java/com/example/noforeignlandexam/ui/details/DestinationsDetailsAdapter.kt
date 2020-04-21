@@ -61,8 +61,8 @@ class PlaceDetailsAdapter(val fromPlaceId: FromPlaceId) :
             holder.customView.textView_places_comments.text = comments
         }
 
-        holder.customView.textView_latitude.text = "Lat: " + place.lat.toString()
-        holder.customView.textView_longitude.text = "Lon: " + place.lon.toString()
+        holder.customView.textView_latitude.text = "Latitude: " + place.lat.toString()
+        holder.customView.textView_longitude.text = "Longitude: " + place.lon.toString()
 
         if (imageUrl.isEmpty()) {
             Picasso.get().load(defaultImage).into(bannerPlaceImageView)
@@ -103,6 +103,7 @@ class PlaceDetailsAdapter(val fromPlaceId: FromPlaceId) :
             const val PLACE_ID_KEY = "PLACE_ID"
             const val PLACE_LAT = "PLACE_LAT"
             const val PLACE_LON = "PLACE_LON"
+            const val PLACE_INFO = "PLACE_INF"
         }
 
     }
